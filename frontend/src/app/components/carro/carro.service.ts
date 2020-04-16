@@ -23,8 +23,39 @@ export class CarroService {
       panelClass: isError ? ["msg-error"] : ["msg-success"],
     });
   }
+  
+  create(carro: Carros): Observable<Carros> {
+    return this.http.post<Carros>(this.baseUrl, carro).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
   read(): Observable<Carros[]> {
     return this.http.get<Carros[]>(this.baseUrl).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+  readById(id:number): Observable<Carros> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Carros>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+  update(carro: Carros): Observable<Carros> {
+    const url = `${this.baseUrl}/${carro.id}`;
+    return this.http.put<Carros>(url, carro).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+  delete(id: number): Observable<Carros> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Carros>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );

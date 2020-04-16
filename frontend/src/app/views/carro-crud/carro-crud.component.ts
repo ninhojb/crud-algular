@@ -12,7 +12,7 @@ export class CarroCrudComponent implements OnInit {
   constructor(private router: Router, private headerService: HeaderService) {
     headerService.headerData = {
       title: 'Carros',
-      icon: 'person',
+      icon: 'directions_car',
       routeUrl: '/carros'
     }
   }
@@ -20,8 +20,7 @@ export class CarroCrudComponent implements OnInit {
   ngOnInit(): void {
   }
   navigateToCarroCreate(): void {
-    console.log('teste')
-    // this.router.navigate(['/products/create'])
+    this.router.navigate(['/carros/create'])
   }
 
 }

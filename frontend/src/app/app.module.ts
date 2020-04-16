@@ -31,6 +31,9 @@ import { RedDirective } from './directives/red.directive';
 import { CarroCrudComponent } from './views/carro-crud/carro-crud.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { CarroUpdateComponent } from './components/carro/carro-update/carro-update.component';
+import { CarroDeleteComponent } from './components/carro/carro-delete/carro-delete.component';
+import { CarroCreateComponent } from './components/carro/carro-create/carro-create.component';
 
 registerLocaleData(localePt);
 
@@ -50,6 +53,9 @@ registerLocaleData(localePt);
     ProductDeleteComponent,
     CarroReadComponent,
     CarroCrudComponent,
+    CarroUpdateComponent,
+    CarroDeleteComponent,
+    CarroCreateComponent,
   ],
   imports: [
     BrowserModule,

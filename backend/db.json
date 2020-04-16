@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 2,
-      "nome": "Renato",
+      "nome": "Antonio",
       "telefone": "11 123456789",
       "endereco": "Av. Inajar"
     },
@@ -22,16 +22,15 @@
   "carros": [
     {
       "id": 1,
-      "placa": "euj-2345",
-      "fabricante": "fiat",
-      "modelo": "siena"
+      "placa": "EUJ-2345",
+      "fabricante": "FIAT",
+      "modelo": "SIENA"
     },
     {
       "id": 2,
-      "placa": "euj-2345",
-      "fabricante": "fiat",
-      "modelo": "siena"
+      "placa": "QWE-2345",
+      "fabricante": "FIAT",
+      "modelo": "PALIO"
     }
-  ] 
+  ]
 }
-

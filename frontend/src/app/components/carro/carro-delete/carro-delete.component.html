@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Excluir Carro</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Placa"
+                [value]="carro.placa" name="placa" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Fabricante"
+                [value]="carro.fabricante" name="fabricante" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Modelo"
+                [value]="carro.modelo" name="modelo" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteCarro()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
