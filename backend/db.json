@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "nome": "Renato",
+      "telefone": "11 123456789",
+      "endereco": "Av. Inajar"
+    },
+    {
+      "id": 3,
+      "nome": "Ana Claudia",
+      "telefone": "11 123456789",
+      "endereco": "Rua João vinte tres"
+    },
+    {
+      "id": 4,
+      "nome": "Beatriz",
+      "telefone": "11 123456789",
+      "endereco": "rua Manaca"
+    }
+  ],
+  "carros": [
+    {
+      "id": 1,
+      "placa": "euj-2345",
+      "fabricante": "fiat",
+      "modelo": "siena"
+    },
+    {
+      "id": 2,
+      "placa": "euj-2345",
+      "fabricante": "fiat",
+      "modelo": "siena"
+    }
+  ] 
+}
+
